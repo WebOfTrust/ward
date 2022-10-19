@@ -5,8 +5,6 @@ import os
 import os.path
 import pathlib
 import threading
-from datetime import datetime
-from logging.handlers import RotatingFileHandler
 
 import rumps
 from keri.app import booting
@@ -45,10 +43,7 @@ class Ward(rumps.App):
             json.dump({
                 "dt": "2022-01-20T12:57:59.823350+00:00",
                 "iurls": [
-                    "http://49.12.190.139:5623/oobi",
-                    "http://139.99.193.43:5623/oobi",
-                    "http://20.3.144.86:5623/oobi",
-                    "http://13.245.160.59:5623/oobi"
+                    "http://127.0.0.1:5623/oobi"
                 ]
             }, f, indent=2)
 
